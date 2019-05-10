@@ -1,1 +1,1 @@
-# News
+Kada sam stvorio projekt, slučajno su se mojom greškom krivo eksportali neki file-ovi te zbog toga aplikcaija nije radila. Ti filovi se nalaze unutar datoteke Razvoj mobilnih aplikacija labosi. Unutar te datoteke se nalazi aplikacija pod nazivom app. Pošto sam sve pusha-o na git sada će se aplikacija app moći otvoriti.
