@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tasky</string>
+    <string name="Add_Category">ADD CATEGORY</string>
+    <string name="New_Category">NEW CATEGORY</string>
+    <string name="New_Task">NEW TASK</string>
+    <string name="Add_Task">ADD TASK</string>
+
+    <string-array name="priority">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+
+</resources>

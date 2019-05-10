@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BitcoinNewsReader</string>
+    <string name="source">Sources:</string>
+    <string name="refreshButton">REFRESH</string>
+</resources>

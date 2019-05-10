@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="temperaureText">Temperature converter</string>
+    <string name="Convert">Convert temperature</string>
+    <string name="Enter">Enter your value</string>
+    <string name="weightText">Weight converter</string>
+    <string name="ConvertWeight">Convert weight</string>
+    <string name="distanceText">Distance converter</string>
+    <string name="ConvertDistance">Convert distance</string>
+    <string name="ConvertTime">Convert time</string>
+    <string name="timeText">Time converter</string>
+    <string-array name="unitsOfTemperature1">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="unitsOfMass">
+        <item>Kilogram</item>
+        <item>Pound</item>
+        <item>Stone</item>
+    </string-array>
+    <string-array name="unitsOfDistance">
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="unitsOfTime">
+        <item>Hours</item>
+        <item>Minutes</item>
+        <item>Seconds</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Biography</string>
+    <string name="messageLabel1"><b>Stephen Hawking</b>\n(January 8, 1942 – March 14, 2018)\nStephen William Hawking was an English theoretical physicist, cosmologist, and author who was director of research at the Centre for Theoretical Cosmology at the University of Cambridge at the time of his death.</string>
+    <string name="messageLabel"> <b>Albert Einstein</b>\n(March 14, 1879 – April 18, 1955)\nAlbert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics).</string>
+    <string name="messageLabel2"><b>Steve Jobs</b>\n(February 24, 1955 – October 5, 2011)\nSteven Paul Jobs (February 24, 1955 – October 5, 2011) was an American business magnate and investor. He was the chairman, chief executive officer (CEO), and co-founder of Apple Inc.</string>
+</resources>

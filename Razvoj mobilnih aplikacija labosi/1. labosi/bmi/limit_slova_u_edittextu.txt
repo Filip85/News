@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/3285412/limit-text-length-of-edittext-in-android

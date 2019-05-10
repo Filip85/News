@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="200dp"
+            android:layout_height="69dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/newsImage"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.719"/>
+
+    <TextView
+            android:id="@+id/newsSource"
+            android:layout_width="115dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/title" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/newsImage"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.867"/>
+    <TextView
+            android:id="@+id/newsAuthor"
+            android:layout_width="115dp"
+            android:layout_height="21dp"
+            app:layout_constraintStart_toEndOf="@+id/newsImage"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.867"
+            app:layout_constraintTop_toBottomOf="@+id/newsSource"/>
+
+    <TextView
+            android:id="@+id/author"
+            android:layout_width="70dp"
+            android:layout_height="18dp"
+            android:text="Author:"
+            app:layout_constraintStart_toEndOf="@+id/newsImage"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/newsAuthor"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/source"
+            app:layout_constraintVertical_bias="0.8"/>
+
+    <TextView
+            android:id="@+id/source"
+            android:layout_width="70dp"
+            android:layout_height="18dp"
+            android:text="Source:"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/newsImage" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/newsSource" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/title" app:layout_constraintVertical_bias="0.571"/>
+
+
+</android.support.constraint.ConstraintLayout>
