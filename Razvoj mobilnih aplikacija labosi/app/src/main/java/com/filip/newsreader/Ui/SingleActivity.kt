@@ -1,19 +1,23 @@
 package com.filip.newsreader.Ui
 
+import android.content.Intent
+import android.icu.util.RangeValueIterator
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.filip.newsreader.Cont.MyApplication
 import com.filip.newsreader.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_single.*
 import org.jetbrains.anko.doAsync
 import org.jsoup.Jsoup
+import org.jsoup.select.Elements
 
 class SingleActivity : AppCompatActivity() {
 
     private var img: String = "null"
     private var news: String ="null"
 
-    companion object {                   //objekt koji nam služ za pristupanje određenom sadržaju kojeg smo poslali iz klase NewsHolder
+    companion object {                   //objekt koji nam služi za pristupanje određenom sadržaju kojeg smo poslali iz klase NewsHolder
         const val PICTURE = "picture"
         const val TITLE = "title"
         const val TEXT = "text"
@@ -28,7 +32,7 @@ class SingleActivity : AppCompatActivity() {
 
     private fun setUpUi() {
         img = intent.getStringExtra(PICTURE ?: "nothing") //primanje url kojeg pohranjujemo u varijabli img te pomoću Picassa s tog url-a učitavamo sliku i prikazujemo je na ImageView-u (singleImage)
-        Picasso.get()
+        Picasso.get()                                   //dohvačanje slike sa url-a
                 .load(img)
                 .error(android.R.drawable.stat_notify_error)
                 .into(singleImage)
@@ -51,7 +55,11 @@ class SingleActivity : AppCompatActivity() {
             // Zarez se ponaša kao OR operator.
             //To se sve sprema u varijablu show
 
-            newsFromUrl.text = show.text()    //prikaz vijesti odnosno samo pragrafa web stranice
+            showTextOfArticle(show)  //poziv funkcije koja nam služi za ispis teksta
         }
+    }
+
+    fun showTextOfArticle(show: Elements){
+        newsFromUrl.text = show.text()    //prikaz članka odnosno samo pragrafa web stranice
     }
 }

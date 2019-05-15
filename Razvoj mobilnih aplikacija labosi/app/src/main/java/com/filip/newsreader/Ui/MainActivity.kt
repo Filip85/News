@@ -3,6 +3,7 @@ package com.filip.newsreader.Ui
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.PersistableBundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.DividerItemDecoration
@@ -29,10 +30,10 @@ import java.time.LocalTime
 
 class MainActivity : AppCompatActivity(), Callback<News> {
 
-    private var code: Int = 0
     private var index: Int = 0
     private var flag: Boolean = false
     private var nisuPrviPodaci: Boolean = true
+    private var checkApp: Boolean = false
 
     private var min: Int = 0
 
@@ -42,12 +43,29 @@ class MainActivity : AppCompatActivity(), Callback<News> {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //displayErrorDialog()
+        Log.d("onCreate", "onCreate se pokrenuo")
 
+        checkDatabase()  //provjerava je li baza prazna ili puna
+
+        setUpUi()   //metoda za postavljanje UI-a
+
+        checkApp = true  //checkApp postavljamo u true kada se uđe u aplikaiju te se checkTime() može pozvati unutar handlera jer je aplikacija aktivna.
+
+        checkTime()    //metoda za provjera vremena, je li prošlo 5 minuta
+    }
+
+    private fun setUpUi() {    //postavljanje recyclerView na ekran. TO se vrši pomoću adaptera
+        news.layoutManager = LinearLayoutManager(this)
+        news.itemAnimator = DefaultItemAnimator()
+        news.addItemDecoration(DividerItemDecoration(this, RecyclerView.VERTICAL))
+
+        news.adapter = newsAdapter    //postavljanje recyclerView pomoću adaptera
+
+    }
+
+    private fun checkDatabase(){   //funkcija kojom se provjera je li baza puna ili prazna
         if(NewsDatabase.newsDao.countArticles() == 0){  //provjera je li baza prazna. Ako je, pokreni retrofit
-            RetrofitFactory.showNewsFromBBC
-                    .showNews(SOURCE, SORT_BY, API_KEY)     //pokretanje retrofita
-                    .enqueue(this)
+            callRetrofit() //pokretanje retofita
 
             min = LocalTime.now().minute                         //u min se stavlja trenutno vrijeme i pohranjuje u bazu
             var time: Time = Time(1, min)                //stvaranje objekta klase Time
@@ -62,44 +80,37 @@ class MainActivity : AppCompatActivity(), Callback<News> {
             Log.d("NisuPrviPodaci", "Nisu Prvi Podaci")
 
         }
-
-        setUpUi()   //metoda za postavljanje UI-a
-
-        checkTime()    //metoda za provjera vremena, je li prošlo 5 minuta
-    }
-
-    private fun setUpUi() {    //postavljanje recyclerView na ekran. TO se vrši pomoću adaptera
-        news.layoutManager = LinearLayoutManager(this)
-        news.itemAnimator = DefaultItemAnimator()
-        news.addItemDecoration(DividerItemDecoration(this, RecyclerView.VERTICAL))
-
-        news.adapter = newsAdapter    //postavljanje recyclerView pomoću adaptera
-
     }
 
     private fun checkTime() {    //metoda koja pimoću handlera provjerava jesu li podaci u bazi stariji od 5 minuta
         Log.d("TAG5", "check")
         Handler().postDelayed({                      //handler koji se pokreće svakih 10 sekundi
-            var jeLiProsloPetMinuta = LocalTime.now().minute
+            var jeLiProsloPetMinuta = LocalTime.now().minute //hvatanje trenutnog vremena (samo minute)
 
-            if((min - jeLiProsloPetMinuta) <=-5 || (min - jeLiProsloPetMinuta) >= 5){    //provjera je li prošlo 5 minuta
-                RetrofitFactory.showNewsFromBBC
-                        .showNews(SOURCE, SORT_BY, API_KEY)
-                        .enqueue(this)
+            if((min - jeLiProsloPetMinuta) <=-1 || (min - jeLiProsloPetMinuta) >= 1){    //provjera je li prošlo 5 minuta
+                callRetrofit()  //pokretanje retorfita
 
                 NewsDatabase.newsDao.updateTime(jeLiProsloPetMinuta)     //spremanje zadnjeg vremena u bazu, uvjek na mjesto gdje je id 1 jer nam treba samo zadnje vrijeme
                 min = NewsDatabase.newsDao.getTime()    //to zadnje vrijeme se sada pohranjuje u varijablu min kao "referntna točka" za usporedbu je li prošlo 5 minuta
 
-                flag = true   //kako se ne bi
+                flag = true   //kako se ne bi pokrenuo if kojim provjeravamo je li baza prazna i jesu li to prvi podaci (1. if)
                 Log.d("TAG1", "pokrenuo se retrofit")
             }
-            checkTime()
+
+            if(checkApp){
+                checkTime()
+            }
 
         }, 10000)   //pokretanje handlera svakih 10 sekundi
     }
 
+    private fun callRetrofit(){
+        RetrofitFactory.showNewsFromBBC                   //pokretanje retrofita
+                .showNews(SOURCE, SORT_BY, API_KEY)
+                .enqueue(this)
+    }
+
     override fun onFailure(call: Call<News>, t: Throwable) {
-        Log.d("TAG", code.toString())
 
         ErrorDialog()
     }
@@ -111,6 +122,12 @@ class MainActivity : AppCompatActivity(), Callback<News> {
 
         val articlesResults = results!!.articles             //spremanje samo liste articala (članaka) u articlesResults, što nam zapravi i treba
 
+        insertInBaseAndDisplayData(articlesResults)    //funkcija za spremnaje  podataka u bazu i ispis tih podataka iz baze u recyclerView
+
+        loading.visibility = View.GONE        //zaustavljanje loadera
+    }
+
+    private fun insertInBaseAndDisplayData(articlesResults: List<Articles>){
         if(NewsDatabase.newsDao.countArticles() == 0){   //ako je baza prazna pohranjuju se prvi podaci u bazu
             for(article in articlesResults){  //prolazi se kroz sve article u listi
                 val articleRes = Articles(index, article.title, article.description, article.url, article.urlToImage) //kreiranje objekta tipa Articles
@@ -136,17 +153,15 @@ class MainActivity : AppCompatActivity(), Callback<News> {
             }
             index = 0
             Log.d("TAG3", "Novi podaci u bazi")
-            newsAdapter.show(NewsDatabase.newsDao.getAllArticles())  //psotavljanje recyclerView-a
+            newsAdapter.show(NewsDatabase.newsDao.getAllArticles())  //postavljanje recyclerView-a
         }
         else{
             newsAdapter.show(NewsDatabase.newsDao.getAllArticles())  //postavljenj recyclerView-a
         }
 
-
-        loading.visibility = View.GONE        //zaustavljanje loadera
     }
 
-    fun ErrorDialog(){   //dialog koji će izbaciti alert ako je došlo do greške prilikom povlačenja podataka sa api-ja
+    private fun ErrorDialog(){   //dialog koji će izbaciti alert ako je došlo do greške prilikom povlačenja podataka sa api-ja
         AlertDialog.Builder(this)    //"izgradnja" altert dialoga
                 .setTitle(R.string.title)  //naslov dialoga odnsno tog ekrančića koji će iskočiti
                 .setMessage(R.string.message)          //poruka koja će pisati u tom prozorčiću
@@ -155,6 +170,22 @@ class MainActivity : AppCompatActivity(), Callback<News> {
                 }
                 .create()   //kreiranje dialoga
                 .show() //prikaz dialoga
+    }
+
+    override fun onStart() {          //kada se sa SingleActivity-a vratimo na MainActivity
+        super.onStart()
+        if(!checkApp){    //provjera je li se korisnik vratio na main activity, ako je pokrećemo retrofit
+            checkTime()
+            checkApp = true
+        }
+        Log.d("Start", "onStart")
+    }
+
+    override fun onPause() {  // kada se izađe iz aplikacije i opet uđe onda se provjeri checkApp koji
+        super.onPause()
+        checkApp = false                      //spriječavamo da se checkTime() unutar handlera pozove kada aplikacija nije aktivna. Time smo spriječili dva puta istovremeni poziv funckije unutar handlera.
+        Log.d("onPause", "Pause")
+
     }
 }
 

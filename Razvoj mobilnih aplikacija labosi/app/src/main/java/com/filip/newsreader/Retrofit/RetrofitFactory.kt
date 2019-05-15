@@ -8,7 +8,7 @@ object RetrofitFactory {
 
     val showNewsFromBBC: NewsApi = Retrofit.Builder()    //objekt tipa NewsApi sučelje. Pomoču njega pristupamo metodi unutar sučelja. Retrofit je klasa kroz koju se api sučelj pretvara u objekt koje se može pozvati
         .baseUrl(BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create())   //korisštenje gsona za convertanje jsona
+        .addConverterFactory(GsonConverterFactory.create())   //korištenje gsona za convertanje jsona
         .client(OkHttpClient.Builder().build())
         .build()
         .create(NewsApi::class.java)

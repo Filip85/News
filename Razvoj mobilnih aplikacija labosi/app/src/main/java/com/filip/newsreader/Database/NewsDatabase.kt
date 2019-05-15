@@ -8,7 +8,7 @@ import com.filip.newsreader.DatabaseTable.Articles
 import com.filip.newsreader.DatabaseTable.Time
 import com.filip.newsreader.Cont.MyApplication
 
-@Database(version = 2, entities = arrayOf(Articles::class, Time::class))
+@Database(version = 3, entities = arrayOf(Articles::class, Time::class))
 abstract class NewsDatabase: RoomDatabase() {                         //baza koja nasljeđuje RoomDatabse
 
     abstract fun newsDao(): NewsDao

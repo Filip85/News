@@ -61,8 +61,6 @@ class NewsHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {  //klasa 
 
         itemView.setOnClickListener{       // listener za otvaranje single news-a u novom activity-u
 
-            //Log.d("TAG", pictureUrl)
-
             val navigate = Intent(MyApplication.ApplicationContext, SingleActivity::class.java)   //Intent za otvaranje novig activity-a
             navigate.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             navigate.putExtra(SingleActivity.TITLE, news1.title)   //Pomoću putExtra šaljemo SingleAcitvity-u naslov, url slike te url
