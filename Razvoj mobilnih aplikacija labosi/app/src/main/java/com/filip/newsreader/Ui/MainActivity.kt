@@ -71,14 +71,14 @@ class MainActivity : AppCompatActivity(), Callback<News> {
             var time: Time = Time(1, min)                //stvaranje objekta klase Time
             NewsDatabase.newsDao.insertTime(time)   //umetanje trenutnog vremena u bazu
 
-            nisuPrviPodaci == false
+            nisuPrviPodaci = false  //sada vec postoje podaci u bazi pa postavljamo  u false
 
         }
         else if(NewsDatabase.newsDao.countArticles() != 0 && nisuPrviPodaci){  //baza nije prazna. nisuPrviPodaci služi kao osigurač da se odmah poslje prvog uvjeta ne pokrene i kod unutar ovog drugog. Ova će se funkcija pokrenuti ako se opet uđi u aplikaciju, a postoje podaci u bazi.
             newsAdapter.show(NewsDatabase.newsDao.getAllArticles())            //ispis članaka, odnosno naslova, opisa i postavljenje slike iz baze u recyclerView
             min = NewsDatabase.newsDao.getTime()                         //spremanje vremena, u varjabli min, iz baze kako bi se dalje u checku moglo provjeravati
             Log.d("NisuPrviPodaci", "Nisu Prvi Podaci")
-
+            loading.visibility = View.GONE   //da nam se loader ne vrti prilikom ponovog ulaska u aplikaciju
         }
     }
 
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity(), Callback<News> {
         Handler().postDelayed({                      //handler koji se pokreće svakih 10 sekundi
             var jeLiProsloPetMinuta = LocalTime.now().minute //hvatanje trenutnog vremena (samo minute)
 
-            if((min - jeLiProsloPetMinuta) <=-1 || (min - jeLiProsloPetMinuta) >= 1){    //provjera je li prošlo 5 minuta
+            if((min - jeLiProsloPetMinuta) <=-5 || (min - jeLiProsloPetMinuta) >= 5){    //provjera je li prošlo 5 minuta
                 callRetrofit()  //pokretanje retorfita
 
                 NewsDatabase.newsDao.updateTime(jeLiProsloPetMinuta)     //spremanje zadnjeg vremena u bazu, uvjek na mjesto gdje je id 1 jer nam treba samo zadnje vrijeme
@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity(), Callback<News> {
                 Log.d("TAG1", "pokrenuo se retrofit")
             }
 
-            if(checkApp){
+            if(checkApp){         //ako je ckeckApp onda opet pozovi checkTime()
                 checkTime()
             }
 
