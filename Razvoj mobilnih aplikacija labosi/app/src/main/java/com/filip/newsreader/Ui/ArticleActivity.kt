@@ -20,19 +20,19 @@ class ArticleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_article)
 
-        viewPager.adapter = FragmentAdapter(supportFragmentManager)
+        viewPager.adapter = FragmentAdapter(supportFragmentManager)           //postavljanje fragmenta
         viewPager.setCurrentItem(2, true)
 
         getId()
 
-        viewPager.setCurrentItem(id!!.toInt(), true)
+        viewPager.setCurrentItem(id!!.toInt(), true)   //postavljanje fragmenta koji ima trenutni id. da se na click otvori određeni fragment, a ne prvi
 
         actionbar = supportActionBar
         actionbar!!.setDisplayHomeAsUpEnabled(true)
 
     }
 
-    private fun getId() {
+    private fun getId() {                               //hvatanje id-a koji je poslan
 
         id = intent?.getStringExtra(ID ?: "nothing recieved")
 
@@ -40,7 +40,7 @@ class ArticleActivity : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         //actionbar!!.title = ""
-        onBackPressed()
+        onBackPressed()                            //da se može otići natrag na MainActivity
         return super.onSupportNavigateUp()
     }
 }
