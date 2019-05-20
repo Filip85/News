@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
@@ -106,8 +106,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66961e96-658e-4677-9bf9-2c24363c6079" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Dao/NewsDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Dao/NewsDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecylcerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecylcerAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/SingleActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_single.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/news_look.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/news_look.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -171,20 +181,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FirstFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="80" column="108" selection-start-line="80" selection-start-column="108" selection-end-line="80" selection-end-column="108" />
+              <caret line="82" column="244" selection-start-line="82" selection-start-column="244" selection-end-line="82" selection-end-column="244" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/SingleActivity.kt">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="884">
+              <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SixthFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="62" column="70" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="167" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SeventhFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/EightFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/NinthFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SecondFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="78" column="160" selection-start-line="78" selection-start-column="160" selection-end-line="78" selection-end-column="160" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/TenthFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/ThirdFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="69" column="161" selection-start-line="69" selection-start-column="161" selection-end-line="69" selection-end-column="161" />
             </state>
           </provider>
         </entry>
@@ -194,9 +276,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
+        <option value="Kotlin File" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -207,44 +290,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Show.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/News.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecyclerInterface.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/MyApplication.kt" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Context/MyApplication.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/newsListener.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Articles.kt" />
-        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Time.kt" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/news_look.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_single.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/NewActivity.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/SingleActivity.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Dao/NewsDao.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Retrofit/NewsApi.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/MainActivity.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/SetUpUi.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/ErrorInterface.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/ErrorO.kt" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/Error.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/ErrorC.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Database/NewsDatabase.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/../build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecylcerAdapter.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Retrofit/RetrofitFactory.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_single.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_pomocni.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/pomocni.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecylcerAdapter.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/SingleActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/FragmentAdapter/FragmentAdapter.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Dao/NewsDao.kt" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/Ssdsd.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Context/MyApplication2.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/ArticleActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_article.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/news_look.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/tenth_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/ninth_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/eight_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/seventh_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/sixth_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fifth_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fourth_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/third_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/second_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/first_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/ArticleActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FourthFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FifthFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SixthFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SeventhFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/EightFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/NinthFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/ThirdFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SecondFragment.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/TenthFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FirstFragment.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="970" />
-    <option name="y" value="20" />
-    <option name="width" value="990" />
-    <option name="height" value="990" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -258,6 +362,28 @@
       <pane id="AndroidView">
         <subPane>
           <expand>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="newsreader" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="newsreader" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="Ui" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -280,8 +406,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.filip.newsreader.Cont" />
       <recent name="com.filip.newsreader.Ui" />
+      <recent name="com.filip.newsreader.Cont" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.filip.newsreader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,7 +514,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25100672" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12281879" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -394,174 +523,27 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4966443" visible="true" weight="0.3201133" />
-      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49731544" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.79060405" visible="true" weight="0.53966004" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4966443" weight="0.3286119" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5033557" side_tool="true" weight="0.43767706" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49597314" weight="0.398017" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.20939597" side_tool="true" weight="0.53966004" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.77114093" weight="0.5" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.3295302" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.34295303" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.30939597" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Assistant" order="6" weight="0.16174497" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Show.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecyclerInterface.kt" />
-    <entry file="file://$PROJECT_DIR$/build/tmp/kapt3/stubs/debug/com/filip/newsreader/DatabaseTable/Articles.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Context/MyApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/newsListener.kt" />
-    <entry file="file://$PROJECT_DIR$/build/tmp/kapt3/stubs/debug/com/filip/newsreader/Dao/NewsDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Articles.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Time.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generated/source/kapt/debug/com/filip/newsreader/Dao/NewsDao_Impl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Cont/MyApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_single.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/News.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Dao/NewsDao.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/news_look.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/ShowListOfNews.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/SetUpUi.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/ErrorInterface.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/Error.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/ErrorO.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/ErrorDialog/ErrorC.kt" />
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="116" column="11" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
-          <folding>
-            <element signature="e#4670#4671#0" expanded="true" />
-            <element signature="e#4703#4704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Retrofit/NewsApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecylcerAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="61" column="100" selection-start-line="61" selection-start-column="100" selection-end-line="61" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Retrofit/RetrofitFactory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#39#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Database/NewsDatabase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/FragmentAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/NewActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -569,25 +551,326 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_pomocni.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/pomocni.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_single.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/SingleActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Dao/NewsDao.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        <state relative-caret-position="365">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/SingleActivity.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/41874e20a4d17fd4ad2052ac217073e14d00c910/picasso-2.71828-sources.jar!/com/squareup/picasso/RequestCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="202" column="24" selection-start-line="202" selection-start-column="24" selection-end-line="202" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/Ssdsd.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/DatabaseTable/Articles.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Context/MyApplication2.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Recylcer/RecylcerAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding>
+            <element signature="e#39#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Context/MyApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+          <folding>
+            <element signature="e#3743#3744#0" expanded="true" />
+            <element signature="e#3770#3771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/FragmentAdapter/FragmentAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="115" selection-start-line="21" selection-start-column="115" selection-end-line="21" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/TextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9333">
+          <caret line="859" column="11" selection-start-line="859" selection-start-column="11" selection-end-line="859" selection-end-column="11" />
+          <folding>
+            <element signature="e#35502#35503#0" expanded="true" />
+            <element signature="e#35537#35538#0" expanded="true" />
+            <element signature="e#98256#98257#0" expanded="true" />
+            <element signature="e#98288#98289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/28.0.0-alpha1/eef87c919a30e5f12f7f66410f3c2ea9eb8ae4f0/appcompat-v7-28.0.0-alpha1-sources.jar!/android/support/v7/app/AlertDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_article.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/news_look.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/tenth_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/first_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/second_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/third_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fourth_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/sixth_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/seventh_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fifth_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/eight_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/ninth_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-fragment/28.0.0-alpha1/63fb77eafdf690d10cc4aac66f5b19a95093802f/support-fragment-28.0.0-alpha1-sources.jar!/android/support/v4/app/FragmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/b8815e48fb45e94821287365bd9ce8623f459ac7/kotlin-stdlib-1.3.21-sources.jar!/kotlin/concurrent/Timer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/ArticleActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FifthFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FourthFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/FirstFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SixthFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="62" column="70" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SeventhFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/EightFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/NinthFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="67" column="114" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/SecondFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="78" column="160" selection-start-line="78" selection-start-column="160" selection-end-line="78" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/TenthFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Fragments/ThirdFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="69" column="161" selection-start-line="69" selection-start-column="161" selection-end-line="69" selection-end-column="161" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/filip/newsreader/Ui/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="80" column="108" selection-start-line="80" selection-start-column="108" selection-end-line="80" selection-end-column="108" />
+          <caret line="82" column="244" selection-start-line="82" selection-start-column="244" selection-end-line="82" selection-end-column="244" />
         </state>
       </provider>
     </entry>

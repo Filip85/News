@@ -33,6 +33,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$libraryVersion"
     implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation "junit:junit:$javaTestingFramework"
     androidTestImplementation "com.android.support.test:runner:$supportTestRunnerVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$supportTestEspressoVersion"
@@ -50,5 +51,4 @@ dependencies {
 
     implementation "org.jsoup:jsoup:$jsoupVersion"
     implementation "org.jetbrains.anko:anko-commons:$ankoVersion"
-
 }

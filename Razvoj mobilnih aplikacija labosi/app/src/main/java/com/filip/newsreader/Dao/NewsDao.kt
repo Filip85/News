@@ -28,5 +28,13 @@ interface NewsDao {
     @Query("UPDATE time SET time = :newTime WHERE id = 1")
     fun updateTime(newTime: Int)                                         //updatanje vremena gdje je id 1
 
+    @Query("SELECT url FROM articles WHERE id = :id")
+    fun getArticle(id: Int): String    //povlačenje
+
+    @Query("SELECT urlToImage FROM articles WHERE id = :id")
+    fun getImageOfArticle(id: Int): String
+
+    @Query("SELECT title FROM articles WHERE id = :id")
+    fun getTitleOfArticle(id: Int): String
 
 }
